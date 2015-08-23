@@ -1,0 +1,37 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page/:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+disqus: dbyll
+google_analytics: dbyll
+permalink: /:title
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: "Arnaud Camus"
+
+title: "Arnaud Camus"
+description: Personal blog where I usually share tips and tricks about Android development.
+author:
+  name: "Arnaud Camus"
+  email: arnaud@arnaud-camus.fr
+  github: lynfogeek
+  twitter: lynfogeek
+  linkedin: arnaudcamus
+  bio: "Co-founder of Impraise (YC S14) • While42 Amsterdam<br />#AndroidDev • Lyonnais"
+  email_md5: e9a0cebdef838ecfa24fc079b3ddc134
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH:
+
+#plugins
+gems: [jekyll-paginate]
