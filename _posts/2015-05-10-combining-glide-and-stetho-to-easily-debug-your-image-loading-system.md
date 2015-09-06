@@ -56,6 +56,8 @@ And do not forget to reference you module in your `AndroidManifest.xml` file:
 
      <meta-data android:name="utils.glide.StethoOkHttpGlideModule"
                 android:value="GlideModule" />
- ### 3. Try it!
 
- ![And enjoy!]({{site.url}}/assets/glide-stetho.png)
+
+### 3. Try it!
+
+ ![And enjoy!]({{ site.url }}/assets/media/glide-stetho.png)

@@ -22,7 +22,7 @@ Support properly the elevation on Lollipop.
 
 *TL;DR:* The whole source code is available on [my github](https://github.com/lynfogeek/CollapsingHeader).
 
-![Result]({{site.url}}/assets/collapsing_header.png)
+![Result]({{ site.url }}/assets/media/collapsing_header.png)
 
 First step, from a layout perspective, it is pretty simple and straight forward: I use a `ToolBar`, a `ListView` and a Floating Action Button:
 
@@ -151,4 +151,4 @@ To polish the effect, you can coordinate the `ToolBar` and `headerView`'s elevat
 And this is the [result](https://github.com/lynfogeek/CollapsingHeader):
 
 
-![Final result]({{site.url}}/assets/collapsing_header_animated.gif)
+![Final result]({{ site.url }}/assets/media/collapsing_header_animated.gif)
