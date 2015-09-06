@@ -26,6 +26,8 @@ author:
   linkedin: arnaudcamus
   bio: "Co-founder of Impraise (YC S14) • While42 Amsterdam<br />#AndroidDev • Lyonnais"
   email_md5: e9a0cebdef838ecfa24fc079b3ddc134
+site:
+  url: http://localhost:4000/
 
 rss_path: feed.xml
 categories_path: categories.html
