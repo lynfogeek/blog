@@ -165,7 +165,7 @@ footer {
     border-radius: 4px 0 0 4px;
 }
 
-.badge { background: #F2756A; }
+.badge { background: #2baf2b; }
 
 #nav-menu{
     position: fixed;
@@ -181,4 +181,3 @@ footer {
 ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
-

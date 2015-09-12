@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Material design, extended Toolbar and scrolling
-categories: [General, Android, Design, Open Source]
+categories: [Android, Design, Open Source]
 tags: [androiddev, open source, Material Design]
 fullview: false
 comments: true

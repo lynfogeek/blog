@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3 ways Gradle can help in your daily work
-categories: [General, Android, Build system]
+categories: [Android, Build system]
 tags: [androiddev, gradle]
 fullview: false
 comments: true

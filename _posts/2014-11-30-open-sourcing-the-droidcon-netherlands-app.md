@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Open Sourcing the Droidcon Netherlands app
-categories: [General, Android, Apps, Open Source]
-tags: [androiddev, open source, Droidcon]
+categories: [Android, Apps, Open Source]
+tags: [androiddev, open source, droidcon]
 fullview: false
 comments: true
 ---

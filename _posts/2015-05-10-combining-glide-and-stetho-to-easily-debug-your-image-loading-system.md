@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Combining Glide and Stetho to easily debug your image loading system
-categories: [General, Android]
+categories: [Android]
 tags: [androiddev, stetho, glide, debugging]
 fullview: false
 comments: true

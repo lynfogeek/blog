@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My first tech talk @ Droidcon Berlin
-categories: [General, Android, Video]
+categories: [Android, Video]
 tags: [androiddev, conference, droidcon]
 fullview: false
 comments: true
