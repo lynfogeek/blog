@@ -5,8 +5,8 @@ paginate_path: "page/:num"
 exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
-disqus: dbyll
-google_analytics: dbyll
+disqus: ac-blog
+google_analytics: UA-32450507-1
 permalink: /:title
 
 defaults:
