@@ -17,7 +17,7 @@ The goal of this app was not to be the best conference app ever but a simple and
 
 The app lists the schedule in the home screen, and you can get more information for each conference, such as the description, location and speaker. I also implemented a simple [Floating Action Button](http://www.google.com/design/spec/components/buttons.html#buttons-floating-action-button) to favorite a talk, this simply highlights it on the main screen.
 
-![The App]({{ site.url }}/assets/media/screenshot_droiconnl.png)
+![The App]({{ site.url }}/assets/media/screenshot_droidconnl.png)
 
 ## The source code
 
