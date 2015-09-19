@@ -181,3 +181,48 @@ footer {
 ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
+
+.nav-menu {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.nav-menu li {
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+
+	position: relative;
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.nav-menu li a {
+  display: block;
+  position: relative;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #fff !important;
+  text-align: center;
+  font-size: 20px;
+}
+
+.nav-menu li:hover {
+	background-color: #50cc50;
+}
+
+.nav-menu li:last-child {
+	margin-bottom: 42px;
+}
