@@ -1,0 +1,55 @@
+I"o<p>Downloading, managing and displaying efficiently images on Android can be a difficult task. Luckily, libraries like <a href="https://github.com/bumptech/glide">Glide</a>  or <a href="http://square.github.io/picasso/">Picasso</a> made it really handy for any developer. While they both are really easy to implement and integrate perfectly within the <code>Activity</code> and <code>Fragment</code> lifecyle; Glide proposes also a killing feature: letting the developer choose his network stack.</p>
+
+<p>On its side, <a href="http://facebook.github.io/stetho/">Stetho</a> is an Android debug bridge tool which bring View hierarchy, Network &amp; DB inspection and more into your Chrome Developer Tools. It is really handy and comes almost for free in terms of implementation. (<a href="http://littlerobots.nl/blog/stetho-for-android-debug-builds-only/">Here’s a good tutorial</a> to only use it with your <code>Debug</code> builds)</p>
+
+<p>So we have 2 good libraries, and both of them support <a href="http://square.github.io/okhttp/">OkHttp</a> as a networking client.</p>
+
+<p>Now let’s see how can we combine them to see every HTTP requests from Glide into your Developer Tools.</p>
+
+<h3 id="1-setting-up-the-network-inspection-via-stetho">1. Setting up the Network inspection via Stetho</h3>
+
+<p>First, in your gradle file you should have:</p>
+
+<pre><code>debugCompile 'com.facebook.stetho:stetho:1.1.0'
+debugCompile 'com.facebook.stetho:stetho-okhttp:1.1.0'
+</code></pre>
+
+<p>Then in your Application class you enable the webkit inspector:</p>
+
+<p>Stetho.initialize(Stetho.newInitializerBuilder(context)
+                        .enableWebKitInspector(Stetho.defaultInspectorModulesProvider(context))
+                        .build());
+You finally just need to add a <code>StethoInterceptor</code> to your <code>OkHttpClient</code> and ta-daaa!</p>
+
+<p>OkHttpClient okClient = new OkHttpClient();
+            okClient.networkInterceptors().add(new StethoInterceptor());</p>
+
+<h3 id="2-configuring-glide-to-use-okhttp-and-stetho">2. Configuring Glide to use OkHttp and Stetho</h3>
+
+<p>Glide provides also a basic <code>GlideModule</code> to directly use OkHttp. I recommend you to read how to integrate it directly <a href="https://github.com/bumptech/glide/wiki/Integration-Libraries#okhttp">in their page</a>.</p>
+
+<p>But this is not enough to make it work. The <code>OkHttpGlideModule</code> does not allow you to configure the <code>OkHttpClient</code>. You do need to compile the <code>okhttp-integration</code> library but you will have to create your own <code>GlideModule</code>.</p>
+
+<pre><code>public class StethoOkHttpGlideModule  implements GlideModule {
+    @Override
+    public void applyOptions(Context context, GlideBuilder builder) { }
+
+    @Override
+    public void registerComponents(Context context, Glide glide) {
+        OkHttpClient client = new OkHttpClient();
+        client.networkInterceptors().add(new StethoInterceptor());
+        glide.register(GlideUrl.class, InputStream.class, new OkHttpUrlLoader.Factory(client));
+    }
+}
+</code></pre>
+
+<p>And do not forget to reference you module in your <code>AndroidManifest.xml</code> file:</p>
+
+<pre><code> &lt;meta-data android:name="utils.glide.StethoOkHttpGlideModule"
+            android:value="GlideModule" /&gt;
+</code></pre>
+
+<h3 id="3-try-it">3. Try it!</h3>
+
+<p><img src="http://localhost:4000/assets/media/glide-stetho.png" alt="And enjoy!" /></p>
+:ET

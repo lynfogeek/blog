@@ -1,0 +1,20 @@
+I"<p><a href="http://droidcon.com/">Droidcon</a> is a global developer conference series which takes place every year in a dozen of different cities around the world. The quality of the talks is really impressive, every time I go to one of these events I learn a lot on various technical and design points.</p>
+
+<p>This year, I had the chance to make the conference app for the Dutch edition. <a href="http://www.droidcon.nl/">Droidcon NL</a> took place in Amsterdam between the 23rd and 25th of November.</p>
+
+<h2 id="the-application">The application</h2>
+
+<p>The goal of this app was not to be the best conference app ever but a simple and easy to use application. I chose to follow the <a href="http://www.google.com/design/spec/">Material Design guidelines</a> which give a really nice look &amp; feel, and allows doing some nice effects really efficiently.</p>
+
+<p>The app lists the schedule in the home screen, and you can get more information for each conference, such as the description, location and speaker. I also implemented a simple <a href="http://www.google.com/design/spec/components/buttons.html#buttons-floating-action-button">Floating Action Button</a> to favorite a talk, this simply highlights it on the main screen.</p>
+
+<p><img src="http://localhost:4000/assets/media/screenshot_droidconnl.png" alt="The App" /></p>
+
+<h2 id="the-source-code">The source code</h2>
+
+<p>During the event, I talked to many people about the app, and besides some tips for improvement, few developers asked me if the source code will be available. So I decided to clean it, refactor a few classes and here we go. <a href="https://github.com/lynfogeek/droidconNL-2014">You can browse / fork / download the source code from my github.</a> It’s released under <a href="https://github.com/lynfogeek/droidconNL-2014/blob/master/LICENSE">Apache v2 license</a>.</p>
+
+<h2 id="the-app">The app</h2>
+
+<p>If you just want to try it, <a href="appbox-octopress">the application is still available on the Google Play</a>, maybe I will update it for next year ;)</p>
+:ET

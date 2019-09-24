@@ -1,0 +1,2 @@
+I"õ<p>Downloading, managing and displaying efficiently images on Android can be a difficult task. Luckily, libraries like <a href="https://github.com/bumptech/glide">Glide</a>  or <a href="http://square.github.io/picasso/">Picasso</a> made it really handy for any developer. While they both are really easy to implement and integrate perfectly within the <code>Activity</code> and <code>Fragment</code> lifecyle; Glide proposes also a killing feature: letting the developer choose his network stack.</p>
+:ET
