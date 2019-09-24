@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My first tech talk @ Droidcon Berlin
+title: Building mobile sign up flows @ Droidcon Berlin
 categories: [Android, Video]
 tags: [androiddev, conference, droidcon]
 fullview: false
