@@ -17,14 +17,13 @@ defaults:
       title: "Arnaud Camus"
 
 title: "Arnaud Camus"
-description: Personal blog where I usually share tips and tricks about Android development.
+description: Personal website where I share about technology, leadership and other topics important to me.
 author:
   name: "Arnaud Camus"
-  email: arnaud@arnaud-camus.fr
   github: lynfogeek
   twitter: lynfogeek
   linkedin: arnaudcamus
-  bio: "Co-founder of Impraise (YC S14) • While42 Amsterdam<br />#AndroidDev • Lyonnais"
+  bio: "Engineering Leader • Entrepreneur • Co-founder of Impraise (YC S14)"
   email_md5: e9a0cebdef838ecfa24fc079b3ddc134
 site:
   url: http://localhost:4000/

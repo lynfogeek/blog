@@ -1,10 +1,10 @@
 <!-- sidebar.html -->
 <header class="sidebar-header" role="banner">
-	<a href="{{ site.BASE_PATH }}/">
+	<a href="{{ site.url }}/">
 		<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" />
 	</a>
 	<h3 class="title">
-        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+        <a href="{{ site.url }}/">{{ site.title }}</a>
     </h3>
 </header>
 
@@ -16,9 +16,9 @@
 
 <div class="navigation">
 	<ul class="nav-menu">
-		<li><a href="{{ site.BASE_PATH }}">HOME</a></li>
-		<li><a href="{{ site.BASE_PATH }}/about-me/">ABOUT ME</a></li>
-		<li><a href="{{ site.BASE_PATH }}/categories.html">CATEGORIES</a></li>
+		<li><a href="{{ site.url }}">HOME</a></li>
+		<li><a href="{{ site.url }}/about-me/">ABOUT ME</a></li>
+		<li><a href="{{ site.url }}/categories.html">CATEGORIES</a></li>
 	</ul>
 </div>
 

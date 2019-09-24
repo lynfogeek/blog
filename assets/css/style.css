@@ -8,7 +8,7 @@ body{
 	position: fixed;
 	top: 0px;
 	padding-top: 10%;
-	background-color: #2baf2b;
+	background-color: #2e7d32;
 	color: #fff;
 }
 
@@ -81,7 +81,7 @@ article .share .gplus:hover {
 }
 
 .page-header {
-	color: #2baf2b;
+	color: #2e7d32;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
 
@@ -116,14 +116,14 @@ article.home h4,
 article.home h5,
 article.home h6 {
 	font-family: 'Ubuntu', sans-serif;
-	color: #2baf2b;
+	color: #2e7d32;
 }
 
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
 article.home h4 a {
-	color: #2baf2b;
+	color: #2e7d32;
 }
 article.home h1 a:hover,
 article.home h2 a:hover,
@@ -165,7 +165,7 @@ footer {
     border-radius: 4px 0 0 4px;
 }
 
-.badge { background: #2baf2b; }
+.badge { background: #2e7d32; }
 
 #nav-menu{
     position: fixed;
