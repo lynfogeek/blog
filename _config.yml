@@ -26,8 +26,8 @@ author:
   bio: "Engineering Leader • Entrepreneur • Co-founder of Impraise (YC S14)"
   email_md5: e9a0cebdef838ecfa24fc079b3ddc134
 site:
-  url: http://localhost:4000/
-url: http://localhost:4000/
+  url: https://arnaud-camus.fr/
+url: https://arnaud-camus.fr/
 
 rss_path: feed.xml
 categories_path: categories.html
